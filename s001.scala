@@ -7,5 +7,13 @@
 
 
 def last(list: List[Int]): Int = {
+    if(list.size <= 1)
+    {
+      throw new Exception("List to short!")
+    }
     list(list.size - 1)
   }
+
+
+// TODO: nil ?
+last(List(1, 1, 2, 3, 5, 8))

@@ -6,6 +6,7 @@
 */
 
 
+object S001{
 def last(list: List[Int]): Int = {
     if(list.size <= 1)
     {
@@ -13,8 +14,7 @@ def last(list: List[Int]): Int = {
     }
     list(list.size - 1)
   }
-
-
-
-// TODO: nil ?
-last(List(1, 1, 2, 3, 5, 8))
+  def main(args: Array[String]): Unit = {
+    println(last(List(1, 1, 2, 3, 5, 8)))
+  }
+}
